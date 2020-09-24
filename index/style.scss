@@ -101,7 +101,37 @@ header {
     .cards {
         display: block;
         margin: 15px 30px;
+        img {
+            height: 200px;
+            width: 100%
+        }
+        .content {
+            padding: 5px;
+        }
     }
 
-    
+    header {
+        display: block;
+        button {
+            float: right;
+            padding: 5px;
+        }
+    }
+
+}
+
+@media (max-width:500px) {
+    .content {
+        height: minmax(200px, auto);
+        font-size: 16px;
+    }
+    .cards {
+        h3 {
+            color: red;
+            margin: 5px;
+        }
+        button {
+            padding: 5px;
+        }
+    }
 }
