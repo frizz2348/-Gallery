@@ -9,6 +9,9 @@ body {
     background: rgb(230, 222, 222);
 }
 
+h1, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .container {
     background: rgb(8, 10, 32);
     width: 80%;
@@ -18,15 +21,15 @@ body {
         &:nth-child(odd) {
             background: skyblue;
         }
-    }
-    & > div:nth-child(even) {
-        color: white;
+        &:nth-child(even) {
+            background: rgb(255, 255, 255);
+        }
     }
 }
 
 header {
+    margin-top: 60px;
     display: flex;
-    margin: 40px;
     justify-content: space-around;
     color: red;
     span {
@@ -47,34 +50,36 @@ header {
 
 .text {
     text-align: center;
-    margin-bottom: 100px;
+    margin: 40px 0 150px;
     color: white;
 }
 
 .cards {
-    margin: 20px 0 0 0;
+    margin: 0 0 20px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
-    grid-auto-rows: min-max(300px, auto);
+    grid-auto-rows: min-max(400px, auto);
     grid-auto-columns: 300px;
     justify-items: center;
     align-items: center;
+    &:nth-child(even) img{
+        order: 2;
+    }
 
     .content {
         padding: 20px;
+        font-size: 15px;
+        line-height: 17px;
     }
     h3 {
         margin-bottom: 20px;
     }
-    .img {
-       // padding: 20px;
-       
-    }
+    
     img {
         background-size: cover;
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
 
     button {
@@ -90,4 +95,13 @@ header {
             transition: $ease-in;
         }
     }
+}
+
+@media (max-width:700px) {
+    .cards {
+        display: block;
+        margin: 15px 30px;
+    }
+
+    
 }
