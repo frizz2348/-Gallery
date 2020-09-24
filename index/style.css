@@ -7,13 +7,14 @@ body {
   background: #e6dede; }
 
 .container {
-  background: white;
+  background: #080a20;
   width: 80%;
   margin: auto;
-  padding: 10px;
-  display: grid; }
+  padding: 10px; }
   .container > div:nth-child(odd) {
     background: skyblue; }
+  .container > div:nth-child(even) {
+    color: white; }
 
 header {
   display: flex;
@@ -21,19 +22,30 @@ header {
   justify-content: space-around;
   color: red; }
   header span {
-    color: #08030a; }
+    color: #eceaec; }
   header button {
+    cursor: pointer;
     border-radius: 50px;
-    background: transparent; }
+    background: #f13f3f;
+    color: #feffff; }
+    header button:hover {
+      background: transparent;
+      transition: ease-in 500ms; }
 
 .text {
   text-align: center;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  color: white; }
 
 .cards {
   margin: 20px 0 0 0;
   display: grid;
-  grid-auto-flow: column; }
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  grid-auto-rows: min-max(300px, auto);
+  grid-auto-columns: 300px;
+  justify-items: center;
+  align-items: center; }
   .cards .content {
     padding: 20px; }
   .cards h3 {
@@ -50,7 +62,8 @@ header {
     margin-top: 10px;
     border-radius: .4em; }
     .cards button:hover {
-      background: white;
-      color: #060711; }
+      background: #e4d3d3;
+      color: #060711;
+      transition: ease-in 500ms; }
 
 /*# sourceMappingURL=style.css.map */
