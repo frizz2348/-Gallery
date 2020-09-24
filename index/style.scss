@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    background: rgb(230, 222, 222);
+}
+
+.container {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    & > div {
+        &:nth-child(odd) {
+            background: skyblue;
+        }
+    }
+}
+
+header {
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    color: red;
+    span {
+        color: rgb(8, 3, 10)
+    }
+    button {
+        border-radius: 50px;
+        background: transparent;
+    }
+}
+
+
+.text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cards {
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-auto-flow: column;
+    .content {
+        padding: 20px;
+    }
+    h3 {
+        margin-bottom: 20px;
+    }
+    .img {
+       // padding: 20px;
+       
+    }
+    img {
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+    }
+
+    button {
+        cursor: pointer;
+        background: black;
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: .4em;
+        &:hover {
+            background: white;
+            color: rgb(6, 7, 17);
+        }
+    }
+}
