@@ -118,9 +118,9 @@ header {
 
 @media (max-width:500px) {
     .container {
-        background: rgb(226, 227, 235);
-        width: 95%;
-        margin: auto;
+        background: rgb(41, 53, 139);
+        width: 100%;
+        padding: 5px;
     }
     .content {
         height: minmax(200px, auto);

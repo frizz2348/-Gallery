@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation On Scroll</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;373;427&display=swap" rel="stylesheet">
@@ -15,13 +15,11 @@
             <h1 class="name">Fr!zz Kanmi Art-Works <span>Gallery</span></h1>
             <button>Sign Up Here</button>
         </header>
-        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, odit!</p>
+        <h3 class="text">I'm A Web Designer, Developer & A Programmer</h3>
 
 
         <div class="cards">
-            <div>
                 <img src="images/img1.jpg" alt="">
-            </div>
             <div class="content">
                 <h3>Fr!zz Painting One</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit aperiam quia quidem tenetur
@@ -32,10 +30,8 @@
             </div>
         </div>
         <div class="cards">
-            <div class="img">
-                <img src="images/img2.jpg" alt="">
-            </div>
-            <div class="content">
+                <img src="images/img2.jpg" alt="" data-aos="fade-down">
+            <div class="content" data-aos="fade-up">
                 <h3>Fr!zz Painting Two</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, hic commodi. Deleniti, voluptate
                 sapiente maiores vitae officia molestias voluptatum, totam, repellat maxime repudiandae aliquam
@@ -44,24 +40,10 @@
                 <button>Buy Now</button>
             </div>
         </div>
+        
         <div class="cards">
-            <div>
-                <img src="images/img3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Fr!zz Painting Three</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis at iste id voluptates
-                harum error magni non expedita labore eum itaque similique, delectus asperiores quia natus minima,
-                qui odit.</p>
-
-                <button>Buy Now</button>
-            </div>
-        </div>
-        <div class="cards">
-            <div>
-                <img src="images/img4.jpg" alt="">
-            </div>
-            <div class="content">
+                <img src="images/img4.jpg" alt="" data-aos="fade-right">
+            <div class="content" data-aos="fade-left">
                 <h3>Fr!zz Painting Four</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo consequatur explicabo nihil,
                 ipsum nostrum commodi iure recusandae fuga quod enim rerum quaerat. Nemo illum non accusantium vel
@@ -71,10 +53,8 @@
             </div>
         </div>
         <div class="cards">
-            <div>
-                <img src="images/img5.jpg" alt="">
-            </div>
-            <div class="content">
+                <img src="images/img5.jpg" alt="" data-aos="fade-right">
+            <div class="content" data-aos="fade-left">
                 <h3>Fr!zz Painting Five</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit aperiam quia quidem tenetur
                 saepe molestiae perspiciatis aliquid, quos consequatur aliquam doloribus excepturi! Quisquam
@@ -83,14 +63,23 @@
                 <button>Buy Now</button>
             </div>
         </div>
+
+        <div class="cards">
+            <img src="images/img3.jpg" alt="" data-aos="fade-left">
+        <div class="content" data-aos="fade-right">
+            <h3>Fr!zz Painting Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis at iste id voluptates
+            harum error magni non expedita labore eum itaque similique, delectus asperiores quia natus minima,
+            qui odit.</p>
+
+            <button>Buy Now</button>
+        </div>
+    </div>
     </div>
 
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="main.js"></script>
 </body>
 

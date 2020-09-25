@@ -83,9 +83,9 @@ header {
       padding: 5px; } }
 @media (max-width: 500px) {
   .container {
-    background: #e2e3eb;
-    width: 95%;
-    margin: auto; }
+    background: #29358b;
+    width: 100%;
+    padding: 5; }
 
   .content {
     height: minmax(200px, auto);
