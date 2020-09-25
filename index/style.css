@@ -82,6 +82,11 @@ header {
       float: right;
       padding: 5px; } }
 @media (max-width: 500px) {
+  .container {
+    background: #e2e3eb;
+    width: 95%;
+    margin: auto; }
+
   .content {
     height: minmax(200px, auto);
     font-size: 16px; }
